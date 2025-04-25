@@ -7,9 +7,9 @@ A simple Python CLI application that helps users choose a birthday dessert based
  
  ---
  
- ## 🚀 Installation Instructions
+ # Installation Instructions
  
- ### ✅ Prerequisites
+ # Prerequisites
  
  Make sure you have the following installed:
  
@@ -23,7 +23,6 @@ A simple Python CLI application that helps users choose a birthday dessert based
  
  1. **Clone this repository:**
  
- ```bash
  git clone https://github.com/DominiqueSolo/Birthday-Cake-Choice-Maker.git
  
  Navigate into the project directory: cd Birthday-Cake-Choice-Maker
