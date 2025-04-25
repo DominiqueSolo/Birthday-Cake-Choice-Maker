@@ -1,0 +1,40 @@
+A simple Python CLI application that helps users choose a birthday dessert based on their preferences for:
+- Cake or cupcakes
+- Yolk or no yolk
+- Milk or no milk
+
+Once preferences are provided, the system outputs a matched recipe and offers instructions either on-screen or via a URL.
+
+---
+
+## 🚀 Installation Instructions
+
+### ✅ Prerequisites
+
+Make sure you have the following installed:
+
+- **Python 3.x** — [https://www.python.org/downloads](https://www.python.org/downloads)
+- **Git** — [https://git-scm.com/downloads](https://git-scm.com/downloads)
+- **Terminal or Command Prompt** (macOS, Linux, or Windows)
+
+---
+
+### 📥 Setup Steps
+
+1. **Clone this repository:**
+
+```bash
+git clone https://github.com/DominiqueSolo/Birthday-Cake-Choice-Maker.git
+
+Navigate into the project directory: cd Birthday-Cake-Choice-Maker
+
+Run the application: python src/main.py
+
+EXAMPLE CODE:
+
+Welcome to the Birthday Cake Choice Maker!
+Whole cake or cupcakes? cupcakes
+Yolk or no yolk? yolk
+Milk or no milk? no milk
+View instructions on screen or URL? screen
+(Recipe instructions display...)
