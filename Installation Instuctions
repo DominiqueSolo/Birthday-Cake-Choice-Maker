@@ -1,39 +1,18 @@
-A simple Python CLI application that helps users choose a birthday dessert based on their preferences for:
- - Cake or cupcakes
- - Yolk or no yolk
- - Milk or no milk
- 
- Once preferences are provided, the system outputs a matched recipe and offers instructions either on-screen or via a URL.
- 
- ---
- 
- # Installation Instructions
- 
- # Prerequisites
- 
- Make sure you have the following installed:
- 
- - **Python 3.x** — [https://www.python.org/downloads](https://www.python.org/downloads)
- - **Git** — [https://git-scm.com/downloads](https://git-scm.com/downloads)
- - **Terminal or Command Prompt** (macOS, Linux, or Windows)
- 
- ---
- 
- ### 📥 Setup Steps
- 
- 1. **Clone this repository:**
- 
- git clone https://github.com/DominiqueSolo/Birthday-Cake-Choice-Maker.git
- 
- Navigate into the project directory: cd Birthday-Cake-Choice-Maker
- 
- Run the application: python src/main.py
- 
- EXAMPLE CODE:
- 
- Welcome to the Birthday Cake Choice Maker!
- Whole cake or cupcakes? cupcakes
- Yolk or no yolk? yolk
- Milk or no milk? no milk
- View instructions on screen or URL? screen
- (Recipe instructions display...)
+To use this Birthday Dessert Choice Maker program, begin by making sure you have Python 3 installed on your computer.
+
+Visit the GitHub repository and click the green "Code" button to copy the repository’s URL.
+
+Open a terminal or command prompt on your device and type git clone followed by the URL you copied, then press Enter. 
+
+This will download the entire project folder to your computer. Navigate into the folder using cd and locate the src folder, which contains the main Python file.
+
+To run the program, type python src/.py
+The program will start by greeting you and asking a series of dessert-related questions. As you answer, it will guide you to a recipe based on your preferences. 
+
+At the end, you can choose to either view the recipe on the screen or receive a URL to view it online. You can type end program at any time to quit. 
+
+If you want to run automated tests to make sure the program behaves correctly, navigate to the tests folder and run pytest from the command line.
+
+Make sure that both the src and tests folders are properly structured and that the test file has the correct import path set up to match the name of your main program file. 
+
+ This setup allows any user or developer to run, explore, and test the program on their own machine.
