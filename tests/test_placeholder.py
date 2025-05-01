@@ -1,7 +1,12 @@
+import sys
+import os
 import unittest
 from unittest.mock import patch
 import io
-from src import birthday_dessert_choice_maker as bdc
+
+sys.path.insert(0, os.path.abspath(os.path.join(os.path.dirname(__file__), '..', 'src')))
+
+import birthday_dessert_choice_maker as bdc
 
 class TestDessertMaker(unittest.TestCase):
 
@@ -10,25 +15,27 @@ class TestDessertMaker(unittest.TestCase):
         with patch('sys.stdout', new=io.StringIO()) as fake_out:
             bdc.main()
             self.assertIn("Classic Vanilla Cupcakes", fake_out.getvalue())
+            self.assertIn("Recipe Instructions:", fake_out.getvalue())
 
     @patch('builtins.input', side_effect=['whole cake', 'no yolk', 'milk', 'url', 'no'])
     def test_url_output(self, mock_input):
         with patch('sys.stdout', new=io.StringIO()) as fake_out:
             bdc.main()
             self.assertIn("Egg White Milk Cake", fake_out.getvalue())
+            self.assertIn("Recipe URL:", fake_out.getvalue())
 
-    @patch('builtins.input', side_effect=['YOLK', 'MILK', 'cupcakes', 'screen', 'no'])
+    @patch('builtins.input', side_effect=['WHOLE CAKE', 'YOLK', 'MILK', 'screen', 'no'])
     def test_case_insensitive(self, mock_input):
         with patch('sys.stdout', new=io.StringIO()) as fake_out:
             bdc.main()
-            self.assertIn("Egg White Milk Cupcakes", fake_out.getvalue())
+            self.assertIn("Classic Yellow Cake", fake_out.getvalue())
 
-    @patch('builtins.input', side_effect=['invalid', 'cupcakes', 'invalid', 'yolk', 'invalid', 'milk', 'url', 'no'])
+    @patch('builtins.input', side_effect=['wrong', 'cupcakes', 'bad', 'yolk', 'nope', 'milk', 'url', 'no'])
     def test_invalid_entries(self, mock_input):
         with patch('sys.stdout', new=io.StringIO()) as fake_out:
             bdc.main()
             output = fake_out.getvalue()
-            self.assertIn("I’m sorry. I did not understand that.", output)
+            self.assertGreaterEqual(output.count("I’m sorry. I did not understand that."), 3)
             self.assertIn("Classic Vanilla Cupcakes", output)
 
     @patch('builtins.input', side_effect=['end program'])
