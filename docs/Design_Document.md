@@ -13,5 +13,3 @@ The Birthday Cake Choice Maker uses a CLI interface to gather user preferences a
 - User-friendly, responsive, error-handling
 - Compatible with modern browsers and screen sizes
 
-### UML Diagrams
-(Use draw.io or PlantUML to visualize user flows and system components.)
