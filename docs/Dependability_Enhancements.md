@@ -1,17 +1,16 @@
 # Dependability Enhancements
 
 ## Vulnerabilities Identified
-- Input errors
-- Incompatible browsers/devices
-- Security (user data access)
-- Performance on low-end devices
+- No feedback for when user choices do not have a corresponding recipe in the database
+- No repeated input statements to prompt the user for a valid input after receiving an invalid input
+- No database the program can use to decide which recipe is best for the user
 
 ## Enhancements Implemented
 - Input error handling
 - Fallback instructions
-- Password lockout concept
+- Database with recipes
 - Lightweight CLI
 
 ## Impact
-- More reliable on various devices
 - Safer and easier to use
+- More advanced with new database information
