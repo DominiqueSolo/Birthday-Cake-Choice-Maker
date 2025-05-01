@@ -5,3 +5,6 @@
 
 ### v1.1
 - April 29: Additional recipes and attributes added, along with more error handling procedures.
+
+### v1.2
+- April 30: Completion of recipe database.
