@@ -6,7 +6,8 @@ Open a terminal or command prompt on your device and type git clone followed by 
 
 This will download the entire project folder to your computer. Navigate into the folder using cd and locate the src folder, which contains the main Python file.
 
-To run the program, type python src/.py
+To run the program, type python src/birthday_dessert_choice_maker.py
+
 The program will start by greeting you and asking a series of dessert-related questions. As you answer, it will guide you to a recipe based on your preferences. 
 
 At the end, you can choose to either view the recipe on the screen or receive a URL to view it online. You can type end program at any time to quit. 
@@ -15,4 +16,4 @@ If you want to run automated tests to make sure the program behaves correctly, n
 
 Make sure that both the src and tests folders are properly structured and that the test file has the correct import path set up to match the name of your main program file. 
 
- This setup allows any user or developer to run, explore, and test the program on their own machine.
+This setup allows any user or developer to run, explore, and test the program on their own machine.
