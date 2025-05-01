@@ -11,5 +11,5 @@ The Birthday Cake Choice Maker uses a CLI interface to gather user preferences a
 
 ### Non-functional Requirements
 - User-friendly, responsive, error-handling
-- Compatible with modern browsers and screen sizes
+
 
