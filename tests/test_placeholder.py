@@ -4,9 +4,12 @@ import unittest
 from unittest.mock import patch
 import io
 
+
 sys.path.insert(0, os.path.abspath(os.path.join(os.path.dirname(__file__), '..', 'src')))
 
+
 import birthday_dessert_choice_maker as bdc
+
 
 class TestDessertMaker(unittest.TestCase):
 
